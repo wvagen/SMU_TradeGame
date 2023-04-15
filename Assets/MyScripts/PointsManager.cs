@@ -4,31 +4,67 @@ using UnityEngine;
 
 public class PointsManager : MonoBehaviour
 {
-    public MyGameManager gameMan;
     public List<Vector2> pointsPoses;
     public GameObject point;
 
-    GameObject currentPoint;
+    public bool isTesting = false;
+
+    public float currentPointsTrailWidth = initTrailWidth;
+
+    List<Point> spawnedPoints = new List<Point>();
+
+    Point currentPoint;
 
     int pointsPosIndex = 0;
 
-    private void Start()
+    MyGameManager myGameMan;
+    const float initTrailWidth = 0.07f;
+
+    public void Set_Me(MyGameManager myGameMan)
+    {
+        this.myGameMan = myGameMan;
+    }
+
+    private void Awake()
     {
         Test_Points();
     }
 
     void Test_Points()
     {
-        for (int i = 0; i < pointsPoses.Count; i++)
+        if (isTesting)
         {
-            GameObject tempPoint = Instantiate(point, pointsPoses[i], Quaternion.identity, transform);
-            tempPoint.GetComponent<SpriteRenderer>().color = Color.black;
+            for(int i = 0; i < 5; i++)
+            {
+                pointsPoses.Add(new Vector2(Random.Range(i + 0f,i + 1f), Random.Range(i + 0f, i + 1f)));
+            }
+
+           /* for (int i = 0; i < pointsPoses.Count; i++)
+            {
+
+                GameObject tempPoint = Instantiate(point, pointsPoses[i], Quaternion.identity, transform);
+                tempPoint.GetComponent<SpriteRenderer>().color = Color.black;
+            }*/
         }
+
+    }
+
+    public void Select_Me()
+    {
+        currentPointsTrailWidth = initTrailWidth * 1.5f;
+
+    }
+
+    public void Unselect_Me()
+    {
+        currentPointsTrailWidth = initTrailWidth;
     }
 
     void Spawn_Next_Point()
     {
-        currentPoint = Instantiate(point, pointsPoses[pointsPosIndex], Quaternion.identity, transform);
+        currentPoint = Instantiate(point, pointsPoses[pointsPosIndex], Quaternion.identity, transform).GetComponent<Point>();
+        spawnedPoints.Add(currentPoint);
+        currentPoint.SetMe(this);
         pointsPosIndex++;
     }
 
@@ -40,7 +76,7 @@ public class PointsManager : MonoBehaviour
 
     void Play_Behavior()
     {
-        if (gameMan.canPlay)
+        if (myGameMan.canPlay)
         {
             if (pointsPosIndex == 0 || (pointsPosIndex < pointsPoses.Count && Vector2.Distance(currentPoint.transform.position, pointsPoses[pointsPosIndex]) < 0.01f ))
             {
@@ -55,6 +91,6 @@ public class PointsManager : MonoBehaviour
 
     void Follow_Next_Point()
     {
-        currentPoint.transform.position = Vector2.MoveTowards(currentPoint.transform.position, pointsPoses[pointsPosIndex], Time.deltaTime * gameMan.gameSpeed);
+        currentPoint.transform.position = Vector2.MoveTowards(currentPoint.transform.position, pointsPoses[pointsPosIndex], Time.deltaTime * myGameMan.gameSpeed);
     }
 }

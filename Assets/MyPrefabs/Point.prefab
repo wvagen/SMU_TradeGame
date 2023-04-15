@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4773419580789586025}
   - component: {fileID: 5926077308685613632}
   - component: {fileID: 8026081278570465167}
+  - component: {fileID: 5955131434609767528}
   m_Layer: 5
   m_Name: Point
   m_TagString: Untagged
@@ -193,3 +194,16 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &5955131434609767528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4773419580789586026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e66d8481aef74ca0a64c09089a7710c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myTrail: {fileID: 5926077308685613632}
