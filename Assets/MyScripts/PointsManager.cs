@@ -51,7 +51,7 @@ public class PointsManager : MonoBehaviour
          values = lines[1].Split(',');
         for (int count = 0; count < values[0].Split(';').Length; count++)
         {
-            pointsPoses[count] = new Vector2(pointsPoses[count].x, float.Parse(values[0].Split(';')[count].ToString()) / 1000);
+            pointsPoses[count] = new Vector2(pointsPoses[count].x, float.Parse(values[0].Split(';')[count].ToString()) / 10000);
         }
 
         values = lines[2].Split(',');
@@ -132,6 +132,7 @@ public class PointsManager : MonoBehaviour
 
         if (!isMoving)
         {
+            Debug.Log(pointsPosIndex);
             if (!string.IsNullOrEmpty(alerts[pointsPosIndex - 1]))
             myGameMan.Display_Alert(alerts[pointsPosIndex - 1]);
             else
@@ -140,7 +141,7 @@ public class PointsManager : MonoBehaviour
             StartCoroutine(MoveToPos(pointsPoses[pointsPosIndex]));
         }
 
-        currentPrice = (int) (currentPoint.transform.position.y * 100);
+        currentPrice = (int) (currentPoint.transform.position.y * 10000);
     }
 
     IEnumerator MoveToPos(Vector3 endPos)

@@ -59,7 +59,7 @@ public class MyGameManager : MonoBehaviour
     {
         if (canPlay)
         {
-            mainCam.transform.position = new Vector3(pointsMan[0].currentPoint.transform.position.x, mainCam.transform.position.y, mainCam.transform.position.z);
+           mainCam.transform.position = new Vector3(pointsMan[0].currentPoint.transform.position.x, mainCam.transform.position.y, mainCam.transform.position.z);
         }
     }
 
