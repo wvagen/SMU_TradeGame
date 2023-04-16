@@ -24,9 +24,13 @@ public class MyGameManager : MonoBehaviour
 
     private void Update()
     {
-        Cam_Movement();
         Update_Prices();
         Restart_Scene();
+    }
+
+    private void LateUpdate()
+    {
+        Cam_Movement();
     }
 
     void Update_Prices()
@@ -47,7 +51,7 @@ public class MyGameManager : MonoBehaviour
     {
         if (canPlay)
         {
-            mainCam.transform.Translate(Vector2.right * Time.deltaTime * gameSpeed * 0.5f);
+            mainCam.transform.position = new Vector3(pointsMan[0].currentPoint.transform.position.x, mainCam.transform.position.y, mainCam.transform.position.z);
         }
     }
 

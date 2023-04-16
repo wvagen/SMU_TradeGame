@@ -12,6 +12,10 @@ PrefabInstance:
       value: currency_point_1
       objectReference: {fileID: 0}
     - target: {fileID: 5926077308685613632, guid: c92857507513e4876a1e5c934899e946, type: 3}
+      propertyPath: m_Time
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 5926077308685613632, guid: c92857507513e4876a1e5c934899e946, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 7e41c014708ec4f19b6d6d13153f9fb1, type: 2}

@@ -15,12 +15,14 @@ public class PointsManager : MonoBehaviour
 
     List<Point> spawnedPoints = new List<Point>();
 
-    Point currentPoint;
+    public Point currentPoint;
 
     int pointsPosIndex = 0;
 
     MyGameManager myGameMan;
     const float initTrailWidth = 0.07f;
+
+    bool isMoving = false;
 
     public void Set_Me(MyGameManager myGameMan)
     {
@@ -115,7 +117,30 @@ public class PointsManager : MonoBehaviour
 
     void Follow_Next_Point()
     {
-        currentPoint.transform.position = Vector2.MoveTowards(currentPoint.transform.position, pointsPoses[pointsPosIndex], Time.deltaTime * myGameMan.gameSpeed);
+        //float distance = Vector3.Distance(currentPoint.transform.position, pointsPoses[pointsPosIndex]);
+       // currentPoint.transform.position = Vector3.MoveTowards(currentPoint.transform.position, pointsPoses[pointsPosIndex], (distance / 1) * Time.deltaTime);
+
+        if (!isMoving)
+        {
+            StartCoroutine(MoveToPos(pointsPoses[pointsPosIndex]));
+        }
+
+        //currentPoint.transform.position = Vector2.MoveTowards(currentPoint.transform.position, pointsPoses[pointsPosIndex], Time.deltaTime * myGameMan.gameSpeed);
         currentPrice = (int) (currentPoint.transform.position.y * 100);
     }
+
+    IEnumerator MoveToPos(Vector3 endPos)
+    {
+        isMoving = true;
+        Vector3 startPos = currentPoint.transform.position;
+        float t = 0f;
+        while (t < 1f)
+        {
+            currentPoint.transform.position = Vector3.Lerp(startPos, endPos, t);
+            t += Time.deltaTime;
+            yield return null;
+        }
+        isMoving = false;
+    }
+
 }
