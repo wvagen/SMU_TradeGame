@@ -15,6 +15,7 @@ public class MyGameManager : MonoBehaviour
 
     public CurrencyBtn[] currencyBtns;
     public PointsManager[] pointsMan;
+    public StockBtn[] stockBtns;
 
     public Camera mainCam;
     public Text myMoneyTxt,alertTxt;
@@ -101,14 +102,22 @@ public class MyGameManager : MonoBehaviour
 
     public void Buy()
     {
-        myMoney -= pointsMan[currencyIndexSelected].currentPrice;
-        Update_Money_Txt();
+        if (myMoney > -10000)
+        {
+            myMoney -= pointsMan[currencyIndexSelected].currentPrice;
+            Update_Money_Txt();
+            stockBtns[currencyIndexSelected].Buy();
+        }
     }
 
     public void Sell()
     {
-        myMoney += pointsMan[currencyIndexSelected].currentPrice;
-        Update_Money_Txt();
+        if (stockBtns[currencyIndexSelected].quantity > 0)
+        {
+            myMoney += pointsMan[currencyIndexSelected].currentPrice;
+            Update_Money_Txt();
+            stockBtns[currencyIndexSelected].Sell();
+        }
     }
 
 }
