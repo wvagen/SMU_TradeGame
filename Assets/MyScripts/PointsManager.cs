@@ -51,7 +51,7 @@ public class PointsManager : MonoBehaviour
          values = lines[1].Split(',');
         for (int count = 0; count < values[0].Split(';').Length; count++)
         {
-            pointsPoses[count] = new Vector2(pointsPoses[count].x, float.Parse(values[0].Split(';')[count].ToString()) / 10000);
+            pointsPoses[count] = new Vector2(pointsPoses[count].x, float.Parse(values[0].Split(';')[count].ToString()) / 1000);
         }
 
         values = lines[2].Split(',');
