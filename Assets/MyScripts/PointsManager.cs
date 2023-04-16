@@ -6,10 +6,12 @@ public class PointsManager : MonoBehaviour
 {
     public List<Vector2> pointsPoses;
     public GameObject point;
+    public TextAsset csvFile;
 
     public bool isTesting = false;
 
     public float currentPointsTrailWidth = initTrailWidth;
+    public int currentPrice = 0;
 
     List<Point> spawnedPoints = new List<Point>();
 
@@ -28,6 +30,28 @@ public class PointsManager : MonoBehaviour
     private void Awake()
     {
         Test_Points();
+        ParseCSV();
+    }
+
+
+    void ParseCSV()
+    {
+        string[] lines = csvFile.text.Split('\n');
+
+            string[] values = lines[0].Split(',');
+                for (int count = 0; count < values[0].Split(';').Length; count++)
+                {
+                    pointsPoses.Add(new Vector2(float.Parse(values[0].Split(';')[count].ToString()), 0));
+                 }
+
+         values = lines[1].Split(',');
+        for (int count = 0; count < values[0].Split(';').Length; count++)
+        {
+             pointsPoses[count] = new Vector2(pointsPoses[count].x, float.Parse(values[0].Split(';')[count].ToString()) / 100);
+        }
+
+            // Debug.Log(lines[i]);
+
     }
 
     void Test_Points()
@@ -92,5 +116,6 @@ public class PointsManager : MonoBehaviour
     void Follow_Next_Point()
     {
         currentPoint.transform.position = Vector2.MoveTowards(currentPoint.transform.position, pointsPoses[pointsPosIndex], Time.deltaTime * myGameMan.gameSpeed);
+        currentPrice = (int) (currentPoint.transform.position.y * 100);
     }
 }

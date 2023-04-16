@@ -7,8 +7,6 @@ public class Point : MonoBehaviour
     public TrailRenderer myTrail;
     public PointsManager pointsMan;
 
-    
-
     public void SetMe(PointsManager pointsMan)
     {
         this.pointsMan = pointsMan;

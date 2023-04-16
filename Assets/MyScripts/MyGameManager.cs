@@ -25,7 +25,16 @@ public class MyGameManager : MonoBehaviour
     private void Update()
     {
         Cam_Movement();
+        Update_Prices();
         Restart_Scene();
+    }
+
+    void Update_Prices()
+    {
+        for (int i = 0; i < pointsMan.Length; i++)
+        {
+            currencyBtns[i].Update_Pricetxt(pointsMan[i].currentPrice);
+        }
     }
 
     private void Restart_Scene()

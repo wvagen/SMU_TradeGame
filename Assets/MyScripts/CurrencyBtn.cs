@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class CurrencyBtn : MonoBehaviour
 {
     public Image myBtnImg;
+    public Text currencyValueTxt;
     public int currencyID;
 
     public Sprite selectedSprite, unselectedSprite;
@@ -15,6 +16,11 @@ public class CurrencyBtn : MonoBehaviour
     public void Set_Me(MyGameManager myGameMan)
     {
         this.myGameMan = myGameMan;
+    }
+
+    public void Update_Pricetxt(int currentPrice)
+    {
+        currencyValueTxt.text = currentPrice.ToString() + "$";
     }
 
     private void Start()
