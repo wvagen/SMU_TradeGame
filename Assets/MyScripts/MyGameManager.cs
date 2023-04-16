@@ -6,14 +6,18 @@ using UnityEngine.SceneManagement;
 
 public class MyGameManager : MonoBehaviour
 {
+    public Animator canvasAnim;
+
     public bool canPlay = false;
+
     public float gameSpeed = 5f;
+    public float pointsSpeed = 5f;
 
     public CurrencyBtn[] currencyBtns;
     public PointsManager[] pointsMan;
 
     public Camera mainCam;
-    public Text myMoneyTxt;
+    public Text myMoneyTxt,alertTxt;
 
     int currencyIndexSelected = 0;
     int myMoney = 1000;
@@ -83,6 +87,17 @@ public class MyGameManager : MonoBehaviour
 
         currencyBtns[currencyIndexSelected].Select_Me_Behavior();
         pointsMan[currencyIndexSelected].Select_Me();
+    }
+
+    public void Hide_Alert()
+    {
+        canvasAnim.SetBool("isShowingNotification", false);
+    }
+
+    public void Display_Alert(string alertTxt)
+    {
+        this.alertTxt.text = alertTxt;
+        canvasAnim.SetBool("isShowingNotification", true);
     }
 
     public void Buy()

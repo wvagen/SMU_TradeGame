@@ -14,11 +14,11 @@ public class PointsManager : MonoBehaviour
     public int currentPrice = 0;
 
     List<Point> spawnedPoints = new List<Point>();
+    List<string> alerts = new List<string>();
 
     public Point currentPoint;
 
     int pointsPosIndex = 0;
-    const float DAY_COUNTER_TIMER = 5;
 
     MyGameManager myGameMan;
     const float initTrailWidth = 0.07f;
@@ -50,10 +50,16 @@ public class PointsManager : MonoBehaviour
          values = lines[1].Split(',');
         for (int count = 0; count < values[0].Split(';').Length; count++)
         {
-             pointsPoses[count] = new Vector2(pointsPoses[count].x, float.Parse(values[0].Split(';')[count].ToString()) / 100);
+            pointsPoses[count] = new Vector2(pointsPoses[count].x, float.Parse(values[0].Split(';')[count].ToString()) / 100);
         }
 
-            // Debug.Log(lines[i]);
+        values = lines[2].Split(',');
+        for (int count = 0; count < values[0].Split(';').Length; count++)
+        {
+            alerts.Add(values[0].Split(';')[count].ToString());
+        }
+
+        // Debug.Log(lines[i]);
 
     }
 
@@ -123,10 +129,14 @@ public class PointsManager : MonoBehaviour
 
         if (!isMoving)
         {
+            if (!string.IsNullOrEmpty(alerts[pointsPosIndex - 1]))
+            myGameMan.Display_Alert(alerts[pointsPosIndex - 1]);
+            else
+            myGameMan.Hide_Alert();
+
             StartCoroutine(MoveToPos(pointsPoses[pointsPosIndex]));
         }
 
-        //currentPoint.transform.position = Vector2.MoveTowards(currentPoint.transform.position, pointsPoses[pointsPosIndex], Time.deltaTime * myGameMan.gameSpeed);
         currentPrice = (int) (currentPoint.transform.position.y * 100);
     }
 
@@ -135,9 +145,9 @@ public class PointsManager : MonoBehaviour
         isMoving = true;
         Vector3 startPos = currentPoint.transform.position;
         float t = 0f;
-        while (t < DAY_COUNTER_TIMER)
+        while (t < myGameMan.pointsSpeed)
         {
-            currentPoint.transform.position = Vector3.Lerp(startPos, endPos, t/ DAY_COUNTER_TIMER);
+            currentPoint.transform.position = Vector3.Lerp(startPos, endPos, t/ myGameMan.pointsSpeed);
             t += Time.deltaTime;
             yield return null;
         }
