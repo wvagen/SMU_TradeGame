@@ -121,6 +121,9 @@ public class PointsManager : MonoBehaviour
             else if (pointsPosIndex < pointsPoses.Count)
             {
                 Follow_Next_Point();
+            }else if (pointsPosIndex >= 30)
+            {
+                myGameMan.GameOver();
             }
         }
     }
@@ -132,7 +135,6 @@ public class PointsManager : MonoBehaviour
 
         if (!isMoving)
         {
-            Debug.Log(pointsPosIndex);
             if (!string.IsNullOrEmpty(alerts[pointsPosIndex - 1]))
             myGameMan.Display_Alert(alerts[pointsPosIndex - 1]);
             else

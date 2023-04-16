@@ -7,6 +7,9 @@ using UnityEngine.SceneManagement;
 public class MyGameManager : MonoBehaviour
 {
     public Animator canvasAnim;
+    public Animator gameOverAnim;
+
+    public GameOverManager gameOvMan;
 
     public bool canPlay = false;
 
@@ -87,6 +90,12 @@ public class MyGameManager : MonoBehaviour
 
         currencyBtns[currencyIndexSelected].Select_Me_Behavior();
         pointsMan[currencyIndexSelected].Select_Me();
+    }
+
+    public void GameOver()
+    {
+        gameOverAnim.Play("GameOver");
+        gameOvMan.Set_Final_Score(myMoney, stockBtns[0].quantity, stockBtns[1].quantity, pointsMan[0].currentPrice, pointsMan[1].currentPrice);
     }
 
     public void Hide_Alert()

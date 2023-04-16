@@ -25,7 +25,7 @@ public class CurrencyBtn : MonoBehaviour
 
     private void Start()
     {
-        Unselect_Me();
+        //Unselect_Me();
     }
 
     public void Select_Me()
