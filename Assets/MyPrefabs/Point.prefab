@@ -85,7 +85,7 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 10
+  m_Time: 1000
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -207,3 +207,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myTrail: {fileID: 5926077308685613632}
+  pointsMan: {fileID: 0}

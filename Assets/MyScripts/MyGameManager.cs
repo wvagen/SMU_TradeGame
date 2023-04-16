@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class MyGameManager : MonoBehaviour
@@ -12,8 +13,10 @@ public class MyGameManager : MonoBehaviour
     public PointsManager[] pointsMan;
 
     public Camera mainCam;
+    public Text myMoneyTxt;
 
     int currencyIndexSelected = 0;
+    int myMoney = 1000;
 
     // Start is called before the first frame update
     void Start()
@@ -62,6 +65,13 @@ public class MyGameManager : MonoBehaviour
             currencyBtns[i].Set_Me(this);
             pointsMan[i].Set_Me(this);
         }
+        myMoney = 1000;
+        Update_Money_Txt();
+    }
+
+    void Update_Money_Txt()
+    {
+        myMoneyTxt.text = myMoney.ToString();
     }
 
     public void Select_Currency(int newSelectedCurrency)
@@ -74,4 +84,17 @@ public class MyGameManager : MonoBehaviour
         currencyBtns[currencyIndexSelected].Select_Me_Behavior();
         pointsMan[currencyIndexSelected].Select_Me();
     }
+
+    public void Buy()
+    {
+        myMoney -= pointsMan[currencyIndexSelected].currentPrice;
+        Update_Money_Txt();
+    }
+
+    public void Sell()
+    {
+        myMoney += pointsMan[currencyIndexSelected].currentPrice;
+        Update_Money_Txt();
+    }
+
 }

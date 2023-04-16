@@ -18,6 +18,7 @@ public class PointsManager : MonoBehaviour
     public Point currentPoint;
 
     int pointsPosIndex = 0;
+    const float DAY_COUNTER_TIMER = 5;
 
     MyGameManager myGameMan;
     const float initTrailWidth = 0.07f;
@@ -134,9 +135,9 @@ public class PointsManager : MonoBehaviour
         isMoving = true;
         Vector3 startPos = currentPoint.transform.position;
         float t = 0f;
-        while (t < 1f)
+        while (t < DAY_COUNTER_TIMER)
         {
-            currentPoint.transform.position = Vector3.Lerp(startPos, endPos, t);
+            currentPoint.transform.position = Vector3.Lerp(startPos, endPos, t/ DAY_COUNTER_TIMER);
             t += Time.deltaTime;
             yield return null;
         }
