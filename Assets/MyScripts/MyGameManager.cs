@@ -20,7 +20,7 @@ public class MyGameManager : MonoBehaviour
     public Text myMoneyTxt,alertTxt;
 
     int currencyIndexSelected = 0;
-    int myMoney = 1000;
+    int myMoney = 10000;
 
     // Start is called before the first frame update
     void Start()
@@ -69,7 +69,6 @@ public class MyGameManager : MonoBehaviour
             currencyBtns[i].Set_Me(this);
             pointsMan[i].Set_Me(this);
         }
-        myMoney = 1000;
         Update_Money_Txt();
     }
 

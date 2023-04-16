@@ -44,13 +44,13 @@ public class PointsManager : MonoBehaviour
             string[] values = lines[0].Split(',');
                 for (int count = 0; count < values[0].Split(';').Length; count++)
                 {
-                    pointsPoses.Add(new Vector2(float.Parse(values[0].Split(';')[count].ToString()), 0));
+                    pointsPoses.Add(new Vector2(float.Parse(values[0].Split(';')[count].ToString()) * 1.655f, 0));
                  }
 
          values = lines[1].Split(',');
         for (int count = 0; count < values[0].Split(';').Length; count++)
         {
-            pointsPoses[count] = new Vector2(pointsPoses[count].x, float.Parse(values[0].Split(';')[count].ToString()) / 100);
+            pointsPoses[count] = new Vector2(pointsPoses[count].x, float.Parse(values[0].Split(';')[count].ToString()) / 1000);
         }
 
         values = lines[2].Split(',');

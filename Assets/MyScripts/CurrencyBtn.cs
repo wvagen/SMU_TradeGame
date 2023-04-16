@@ -35,11 +35,12 @@ public class CurrencyBtn : MonoBehaviour
 
     public void Select_Me_Behavior()
     {
-        myBtnImg.sprite = selectedSprite;
+        myBtnImg.enabled = true;
     }
 
     public void Unselect_Me()
     {
-        myBtnImg.sprite = unselectedSprite;
+        // myBtnImg.sprite = unselectedSprite;
+        myBtnImg.enabled = false;
     }
 }

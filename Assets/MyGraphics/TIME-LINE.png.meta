@@ -1,0 +1,496 @@
+fileFormatVersion: 2
+guid: e1e083168666c400592a55dccde25e5c
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TIME-LINE_0
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 920
+        width: 867
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4b1c47b721de4fcab7ad5b6b2921494
+      internalID: 1677202026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIME-LINE_1
+      rect:
+        serializedVersion: 2
+        x: 1144
+        y: 907
+        width: 102
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9a96bd8b66734d49b68c57f22bafc4e
+      internalID: 118569304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIME-LINE_22
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 755
+        width: 883
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 489752e1230d54c07989b91b1f484877
+      internalID: -650929420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIME-LINE_23
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 208
+        width: 8
+        height: 599
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa785c046187c4c169beea0e8b44fbf6
+      internalID: -1098126670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIME-LINE_45
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 586
+        width: 885
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0a40edab5d1c4b9ea4680986d20ee37
+      internalID: -2022245913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIME-LINE_71
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 421
+        width: 888
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 592a3081e03454d80b68946f5b0abc2e
+      internalID: 1032132722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIME-LINE_97
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 251
+        width: 888
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f6398299a0f947ea9e0f0f8c0395356
+      internalID: -1219473910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIME-LINE_123
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 89
+        width: 888
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d120824d60654f4ab299b42d970fa6e
+      internalID: -1060157264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIME-LINE_2
+      rect:
+        serializedVersion: 2
+        x: 1142
+        y: 203
+        width: 20
+        height: 610
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b9c8af1fa6f54457b753429ef11f21f
+      internalID: -416895993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      TIME-LINE_116: -587979785
+      TIME-LINE_10: 1664886106
+      TIME-LINE_19: -1870297447
+      TIME-LINE_109: 2069476489
+      TIME-LINE_107: 319382778
+      TIME-LINE_99: 1283905637
+      TIME-LINE_62: -201141243
+      TIME-LINE_70: -647600839
+      TIME-LINE_126: 1140783935
+      TIME-LINE_14: -118097953
+      TIME-LINE_135: 1239429171
+      TIME-LINE_51: -1315816386
+      TIME-LINE_134: 1012779144
+      TIME-LINE_110: -1302424325
+      TIME-LINE_38: -2116254467
+      TIME-LINE_122: -1753224348
+      TIME-LINE_5: 87139007
+      TIME-LINE_11: 1754455714
+      TIME-LINE_69: 436173955
+      TIME-LINE_89: -532754876
+      TIME-LINE_17: -1654732175
+      TIME-LINE_63: -1922711692
+      TIME-LINE_86: 1826662753
+      TIME-LINE_147: 1289693337
+      TIME-LINE_131: 591773221
+      TIME-LINE_132: 227448920
+      TIME-LINE_130: 126398828
+      TIME-LINE_65: 1155693918
+      TIME-LINE_81: -1153600459
+      TIME-LINE_127: -571518559
+      TIME-LINE_73: 1763543882
+      TIME-LINE_144: 1468333054
+      TIME-LINE_103: -306720173
+      TIME-LINE_27: 583847962
+      TIME-LINE_28: 2084058499
+      TIME-LINE_100: -1868938464
+      TIME-LINE_85: 1508338390
+      TIME-LINE_43: -540432952
+      TIME-LINE_71: 1032132722
+      TIME-LINE_105: 634522053
+      TIME-LINE_91: 963566531
+      TIME-LINE_48: 1020232097
+      TIME-LINE_15: 1302395183
+      TIME-LINE_33: 534378776
+      TIME-LINE_46: -915863369
+      TIME-LINE_146: 888654635
+      TIME-LINE_58: -382226831
+      TIME-LINE_4: -1905243989
+      TIME-LINE_143: -818126854
+      TIME-LINE_95: -1986872861
+      TIME-LINE_111: -54435882
+      TIME-LINE_44: 823026299
+      TIME-LINE_40: -1416589227
+      TIME-LINE_108: -466602165
+      TIME-LINE_47: -398679663
+      TIME-LINE_77: -756206171
+      TIME-LINE_148: -202317229
+      TIME-LINE_13: -1353711082
+      TIME-LINE_83: 1649208364
+      TIME-LINE_30: 543259042
+      TIME-LINE_106: 475520980
+      TIME-LINE_67: 962644849
+      TIME-LINE_142: 630856980
+      TIME-LINE_97: -1219473910
+      TIME-LINE_36: 1308256595
+      TIME-LINE_136: 1130731795
+      TIME-LINE_129: 139275746
+      TIME-LINE_137: -1165454853
+      TIME-LINE_39: 532847008
+      TIME-LINE_93: -500959901
+      TIME-LINE_16: 1680216435
+      TIME-LINE_72: 1353687955
+      TIME-LINE_78: -98618826
+      TIME-LINE_88: -394303319
+      TIME-LINE_133: 1779605022
+      TIME-LINE_75: 799088364
+      TIME-LINE_119: 227604860
+      TIME-LINE_114: 1481083610
+      TIME-LINE_21: 1742609387
+      TIME-LINE_42: 1807037323
+      TIME-LINE_82: -840738902
+      TIME-LINE_52: 679805036
+      TIME-LINE_56: 1303266534
+      TIME-LINE_102: -1984925332
+      TIME-LINE_54: 2108388353
+      TIME-LINE_121: -436390625
+      TIME-LINE_57: 555029164
+      TIME-LINE_1: 118569304
+      TIME-LINE_25: 537676572
+      TIME-LINE_0: 1677202026
+      TIME-LINE_45: -2022245913
+      TIME-LINE_117: -854499887
+      TIME-LINE_115: 75014144
+      TIME-LINE_118: -1530115641
+      TIME-LINE_22: -650929420
+      TIME-LINE_23: -1098126670
+      TIME-LINE_8: -224782976
+      TIME-LINE_18: -811845512
+      TIME-LINE_34: 685606486
+      TIME-LINE_113: 1012006394
+      TIME-LINE_9: 656309022
+      TIME-LINE_41: -728291898
+      TIME-LINE_3: 1711879062
+      TIME-LINE_76: 1474233547
+      TIME-LINE_60: -1346736526
+      TIME-LINE_139: -7607375
+      TIME-LINE_140: 253127191
+      TIME-LINE_79: -1005645039
+      TIME-LINE_98: 1292478644
+      TIME-LINE_7: -191800309
+      TIME-LINE_64: -5964981
+      TIME-LINE_128: -1237296078
+      TIME-LINE_123: -1060157264
+      TIME-LINE_37: 1973901415
+      TIME-LINE_68: -1713532790
+      TIME-LINE_84: -168040749
+      TIME-LINE_90: 1402241461
+      TIME-LINE_31: 1676887310
+      TIME-LINE_101: 37940979
+      TIME-LINE_112: 1142652400
+      TIME-LINE_6: -803417550
+      TIME-LINE_74: -1383965202
+      TIME-LINE_53: 2146417970
+      TIME-LINE_120: 688361755
+      TIME-LINE_59: -371644253
+      TIME-LINE_26: -1584290086
+      TIME-LINE_125: -2146052961
+      TIME-LINE_66: -1990168913
+      TIME-LINE_20: 182905902
+      TIME-LINE_104: 570302332
+      TIME-LINE_50: 1592235563
+      TIME-LINE_92: -450388046
+      TIME-LINE_32: -1935383976
+      TIME-LINE_141: -1000640969
+      TIME-LINE_145: 743100053
+      TIME-LINE_49: 461688515
+      TIME-LINE_2: -416895993
+      TIME-LINE_12: -896078622
+      TIME-LINE_24: -203946408
+      TIME-LINE_55: -1376019978
+      TIME-LINE_61: -1809918764
+      TIME-LINE_29: 864597203
+      TIME-LINE_35: 1893644767
+      TIME-LINE_94: 978348502
+      TIME-LINE_96: 917410979
+      TIME-LINE_87: 113599315
+      TIME-LINE_124: -249022551
+      TIME-LINE_80: 793834816
+      TIME-LINE_138: 690873154
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
