@@ -15,7 +15,7 @@ public class StockBtn : MonoBehaviour
 
     public void Buy()
     {
-        quantity++;
+        quantity += 10;
         Update_Quantity_Txt();
     }
 
@@ -28,7 +28,7 @@ public class StockBtn : MonoBehaviour
     {
         if (quantity > 0)
         {
-            quantity--;
+            quantity -= 10;
         }
         Update_Quantity_Txt();
     }

@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4773419580789586026, guid: c92857507513e4876a1e5c934899e946, type: 3}
       propertyPath: m_Name
-      value: currency_point_1
+      value: point_oil
       objectReference: {fileID: 0}
     - target: {fileID: 5926077308685613632, guid: c92857507513e4876a1e5c934899e946, type: 3}
       propertyPath: m_Time
@@ -18,7 +18,7 @@ PrefabInstance:
     - target: {fileID: 5926077308685613632, guid: c92857507513e4876a1e5c934899e946, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 7e41c014708ec4f19b6d6d13153f9fb1, type: 2}
+      objectReference: {fileID: 2100000, guid: 6df6f7823d4064f0db030eb5b688bf7f, type: 2}
     - target: {fileID: 7582837008693140470, guid: c92857507513e4876a1e5c934899e946, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -65,15 +65,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8026081278570465167, guid: c92857507513e4876a1e5c934899e946, type: 3}
       propertyPath: m_Color.b
-      value: 0.18671565
+      value: 0.54509807
       objectReference: {fileID: 0}
     - target: {fileID: 8026081278570465167, guid: c92857507513e4876a1e5c934899e946, type: 3}
       propertyPath: m_Color.g
-      value: 0.8784314
+      value: 0.43921572
       objectReference: {fileID: 0}
     - target: {fileID: 8026081278570465167, guid: c92857507513e4876a1e5c934899e946, type: 3}
       propertyPath: m_Color.r
-      value: 0.1843137
+      value: 0.97647065
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c92857507513e4876a1e5c934899e946, type: 3}

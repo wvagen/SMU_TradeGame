@@ -625,7 +625,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8258030109954642965, guid: 7c690b9135aeb48dba8a285ec4ae96d9, type: 3}
       propertyPath: quantity
-      value: 10
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c690b9135aeb48dba8a285ec4ae96d9, type: 3}
@@ -1393,6 +1393,10 @@ PrefabInstance:
     - target: {fileID: 1379384781658430459, guid: 713ad65cb155647bb9c5acefe8d45219, type: 3}
       propertyPath: isTesting
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1379384781658430459, guid: 713ad65cb155647bb9c5acefe8d45219, type: 3}
+      propertyPath: alphaColor
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1379384781658430459, guid: 713ad65cb155647bb9c5acefe8d45219, type: 3}
       propertyPath: pointsPoses.Array.size
@@ -2553,10 +2557,10 @@ PrefabInstance:
     - target: {fileID: 8250946936078821028, guid: 7c690b9135aeb48dba8a285ec4ae96d9, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 725424395, guid: fbd03362b989c4ce6860e486df32af5b, type: 3}
+      objectReference: {fileID: 8020387, guid: fbd03362b989c4ce6860e486df32af5b, type: 3}
     - target: {fileID: 8258030109954642965, guid: 7c690b9135aeb48dba8a285ec4ae96d9, type: 3}
       propertyPath: quantity
-      value: 10
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c690b9135aeb48dba8a285ec4ae96d9, type: 3}
@@ -3046,6 +3050,10 @@ PrefabInstance:
     - target: {fileID: 1379384781658430459, guid: 713ad65cb155647bb9c5acefe8d45219, type: 3}
       propertyPath: isTesting
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1379384781658430459, guid: 713ad65cb155647bb9c5acefe8d45219, type: 3}
+      propertyPath: alphaColor
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1379384781658430459, guid: 713ad65cb155647bb9c5acefe8d45219, type: 3}
       propertyPath: pointsPoses.Array.size

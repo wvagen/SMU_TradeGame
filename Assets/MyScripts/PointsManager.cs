@@ -11,6 +11,7 @@ public class PointsManager : MonoBehaviour
     public bool isTesting = false;
 
     public float currentPointsTrailWidth = initTrailWidth;
+    public float alphaColor = 0.5f;
     public int currentPrice = 0;
 
     List<Point> spawnedPoints = new List<Point>();
@@ -85,12 +86,14 @@ public class PointsManager : MonoBehaviour
     public void Select_Me()
     {
         currentPointsTrailWidth = initTrailWidth * 1.5f;
+        alphaColor = 1;
 
     }
 
     public void Unselect_Me()
     {
         currentPointsTrailWidth = initTrailWidth;
+        alphaColor = 0.5f;
     }
 
     void Spawn_Next_Point()

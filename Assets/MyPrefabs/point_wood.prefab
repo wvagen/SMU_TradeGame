@@ -9,12 +9,12 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4773419580789586026, guid: c92857507513e4876a1e5c934899e946, type: 3}
       propertyPath: m_Name
-      value: currency_point_2
+      value: point_wood
       objectReference: {fileID: 0}
     - target: {fileID: 5926077308685613632, guid: c92857507513e4876a1e5c934899e946, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 6df6f7823d4064f0db030eb5b688bf7f, type: 2}
+      objectReference: {fileID: 2100000, guid: 11e814a694d2647ad827d4d47f9fb489, type: 2}
     - target: {fileID: 7582837008693140470, guid: c92857507513e4876a1e5c934899e946, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -61,15 +61,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8026081278570465167, guid: c92857507513e4876a1e5c934899e946, type: 3}
       propertyPath: m_Color.b
-      value: 0.18431373
+      value: 0.9058824
       objectReference: {fileID: 0}
     - target: {fileID: 8026081278570465167, guid: c92857507513e4876a1e5c934899e946, type: 3}
       propertyPath: m_Color.g
-      value: 0.3372549
+      value: 0.65882355
       objectReference: {fileID: 0}
     - target: {fileID: 8026081278570465167, guid: c92857507513e4876a1e5c934899e946, type: 3}
       propertyPath: m_Color.r
-      value: 0.8784314
+      value: 0.35686275
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c92857507513e4876a1e5c934899e946, type: 3}
