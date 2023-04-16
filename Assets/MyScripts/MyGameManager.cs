@@ -21,7 +21,7 @@ public class MyGameManager : MonoBehaviour
     public Text myMoneyTxt,alertTxt;
 
     int currencyIndexSelected = 0;
-    int myMoney = 10000;
+    int myMoney = 50000;
 
     // Start is called before the first frame update
     void Start()
